@@ -22,7 +22,12 @@ export default function DeleteAccountPage() {
             <p>
               To request deletion of your BattleShift account, email
               {" "}
-              <a className="text-[var(--accent)]" href="mailto:game@getbattleshift.com">
+              <a
+                className="text-[var(--accent)]"
+                href="mailto:game@getbattleshift.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 game@getbattleshift.com
               </a>
               {" "}
@@ -47,9 +52,24 @@ export default function DeleteAccountPage() {
             <Link href="/">Home</Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/delete-account">Delete Account</Link>
-            <a href="mailto:game@getbattleshift.com">Support</a>
+            <a href="mailto:game@getbattleshift.com" target="_blank" rel="noreferrer">
+              Support
+            </a>
           </div>
-          <p>© 2026 BattleShift. All rights reserved.</p>
+          <div>
+            <p>© 2026 BattleShift. All rights reserved.</p>
+            <p className="mt-2">
+              Proudly designed by{" "}
+              <a
+                href="https://nythral.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white/72 transition-colors duration-200 hover:text-[var(--accent)]"
+              >
+                Nythral Autonomous Reasoning
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </main>

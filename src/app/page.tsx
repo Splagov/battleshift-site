@@ -201,6 +201,8 @@ export default function Home() {
               <a href="#map">Map</a>
               <a
                 href={appStoreUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex h-11 items-center justify-center rounded-full border border-cyan-300/20 bg-white/5 px-6 text-white transition-colors duration-200 hover:bg-white/10"
               >
                 Download on App Store
@@ -226,6 +228,8 @@ export default function Home() {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href={appStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex h-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#58d8ff,#79ffb3)] px-8 text-sm font-black tracking-[0.18em] text-slate-950 uppercase transition-transform duration-200 hover:-translate-y-0.5"
                 >
                   Download on App Store
@@ -366,6 +370,8 @@ export default function Home() {
             </p>
             <a
               href={appStoreUrl}
+              target="_blank"
+              rel="noreferrer"
               className="mt-8 inline-flex h-12 items-center justify-center rounded-full border border-cyan-300/16 bg-cyan-300/10 px-6 text-sm font-black tracking-[0.18em] text-white uppercase"
             >
               Play the current App Store build
@@ -530,6 +536,8 @@ export default function Home() {
               <div className="flex flex-col items-stretch gap-4 sm:min-w-72">
                 <a
                   href={appStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex h-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#58d8ff,#79ffb3)] px-8 text-sm font-black tracking-[0.16em] text-slate-950 uppercase transition-transform duration-200 hover:-translate-y-0.5"
                 >
                   Download on App Store
@@ -565,13 +573,30 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-semibold tracking-[0.12em] text-white/72 uppercase">
-            <a href={appStoreUrl}>App Store</a>
+            <a href={appStoreUrl} target="_blank" rel="noreferrer">
+              App Store
+            </a>
             <a href="/privacy">Privacy Policy</a>
             <a href="/delete-account">Delete Account</a>
-            <a href="mailto:game@getbattleshift.com">Support</a>
+            <a href="mailto:game@getbattleshift.com" target="_blank" rel="noreferrer">
+              Support
+            </a>
           </div>
 
-          <p className="text-sm text-white/48">© 2026 BattleShift. All rights reserved.</p>
+          <div className="text-sm text-white/48">
+            <p>© 2026 BattleShift. All rights reserved.</p>
+            <p className="mt-2">
+              Proudly designed by{" "}
+              <a
+                href="https://nythral.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-white/72 transition-colors duration-200 hover:text-(--accent)"
+              >
+                Nythral Autonomous Reasoning
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
     </main>
