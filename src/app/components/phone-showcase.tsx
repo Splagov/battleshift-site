@@ -51,7 +51,7 @@ export function PhoneShowcase() {
   const visibleShots = useMemo(() => shots.slice(0, 5), []);
 
   return (
-    <div className="relative">
+    <div className="relative mx-auto w-full max-w-[392px]">
       <div className="absolute -left-10 top-16 h-40 w-40 rounded-full bg-cyan-400/18 blur-3xl" />
       <div className="absolute -right-6 bottom-14 h-52 w-52 rounded-full bg-emerald-300/14 blur-3xl" />
       <div className="hero-aura relative mx-auto w-full max-w-[372px] overflow-hidden rounded-[2.6rem] border border-white/12 bg-[linear-gradient(180deg,rgba(7,18,29,0.98),rgba(5,12,19,1))] p-3.5 backdrop-blur-xl">
@@ -84,16 +84,15 @@ export function PhoneShowcase() {
         </div>
       </div>
 
-      <div className="mt-5 space-y-4">
-        <div className="flex min-h-[112px] items-start justify-between gap-4 rounded-[1.6rem] border border-white/10 bg-[#0a1623]/88 px-5 py-4">
-          <div className="min-h-[68px]">
-            <p className="text-[11px] font-bold tracking-[0.24em] text-(--accent-cool) uppercase">
-              iPhone Showcase
+      <div className="mx-auto mt-5 w-full max-w-[372px]">
+        <div className="relative h-[120px] rounded-[1.6rem] border border-white/10 bg-[#0a1623]/88 px-5 py-4">
+          <div className="pr-28">
+            <p className="text-xl font-semibold text-white">{activeShot.title}</p>
+            <p className="mt-2 max-w-[15rem] text-sm leading-6 text-(--muted)">
+              {activeShot.subtitle}
             </p>
-            <p className="mt-2 text-xl font-semibold text-white">{activeShot.title}</p>
-            <p className="mt-1 max-w-[15rem] text-sm leading-6 text-(--muted)">{activeShot.subtitle}</p>
           </div>
-          <div className="flex shrink-0 gap-2 pt-1">
+          <div className="absolute right-5 top-5 flex shrink-0 gap-2">
             {visibleShots.map((shot, index) => (
               <button
                 key={shot.src}
@@ -105,27 +104,6 @@ export function PhoneShowcase() {
                 }`}
               />
             ))}
-          </div>
-        </div>
-
-        <div className="grid grid-cols-3 gap-3">
-          <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-            <p className="text-[11px] font-bold tracking-[0.18em] text-white/55 uppercase">
-              Rooms
-            </p>
-            <p className="mt-2 text-base font-semibold text-white">Live PvP and bot practice</p>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-            <p className="text-[11px] font-bold tracking-[0.18em] text-white/55 uppercase">
-              Control
-            </p>
-            <p className="mt-2 text-base font-semibold text-white">Move, stop, target, cast</p>
-          </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-            <p className="text-[11px] font-bold tracking-[0.18em] text-white/55 uppercase">
-              Social
-            </p>
-            <p className="mt-2 text-base font-semibold text-white">Friends, chat, community</p>
           </div>
         </div>
       </div>
