@@ -14,9 +14,9 @@ const rajdhani = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "BattleShift",
+  title: "BattleShift | Hero Duel Arena",
   description:
-    "BattleShift is a competitive hero arena where players control distinct champions, crush enemy fountains, and outplay opponents in live battles.",
+    "BattleShift is a live mobile hero duel arena with real heroes, direct PvP rooms, towers, creeps, chat, friends, and community-driven rivalry.",
 };
 
 export default function RootLayout({

@@ -2,14 +2,14 @@
 
 :root {
   --background: #08111b;
-  --background-soft: #0f1d2d;
+  --background-soft: #0d1d30;
   --foreground: #edf7ff;
   --muted: #97adbf;
   --line: rgba(173, 216, 255, 0.14);
-  --panel: rgba(8, 21, 34, 0.76);
-  --accent: #89ffba;
-  --accent-warm: #ffb15e;
-  --accent-cool: #61d7ff;
+  --panel: rgba(7, 18, 29, 0.82);
+  --accent: #6fffb7;
+  --accent-warm: #53d8ff;
+  --accent-cool: #38bcff;
 }
 
 @theme inline {
@@ -32,7 +32,8 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
   background-image:
-    radial-gradient(circle at top, rgba(97, 215, 255, 0.18), transparent 28%),
+    radial-gradient(circle at top, rgba(56, 188, 255, 0.19), transparent 24%),
+    radial-gradient(circle at 82% 12%, rgba(111, 255, 183, 0.12), transparent 18%),
     linear-gradient(180deg, #08111b 0%, #091521 44%, #04080d 100%);
 }
 
@@ -48,7 +49,7 @@ a {
 
 .battle-grid {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 32px 32px;
 }
