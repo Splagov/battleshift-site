@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | BattleShift",
@@ -54,36 +55,50 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <main className="battle-grid min-h-screen px-6 py-16 text-white lg:px-10">
-      <div className="mx-auto max-w-4xl">
-        <div className="rounded-[2rem] border border-white/10 bg-[#09131f]/88 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-12">
-          <p className="text-xs font-bold tracking-[0.28em] text-[var(--accent)] uppercase">
-            BattleShift
-          </p>
-          <h1 className="mt-4 font-display text-4xl tracking-[0.08em] uppercase md:text-5xl">
-            Privacy Policy
-          </h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-white/72">
-            This policy explains what data BattleShift collects, how it is used,
-            and how players can request support or deletion.
-          </p>
+    <main className="battle-grid min-h-screen text-white">
+      <div className="px-6 py-16 lg:px-10">
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-[2rem] border border-white/10 bg-[#09131f]/88 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-12">
+            <p className="text-xs font-bold tracking-[0.28em] text-[var(--accent)] uppercase">
+              BattleShift
+            </p>
+            <h1 className="mt-4 font-display text-4xl tracking-[0.08em] uppercase md:text-5xl">
+              Privacy Policy
+            </h1>
+            <p className="mt-5 max-w-3xl text-lg leading-8 text-white/72">
+              This policy explains what data BattleShift collects, how it is used,
+              and how players can request support or deletion.
+            </p>
 
-          <div className="mt-12 space-y-10">
-            {sections.map((section) => (
-              <section key={section.title}>
-                <h2 className="font-display text-2xl tracking-[0.08em] uppercase text-white">
-                  {section.title}
-                </h2>
-                <div className="mt-4 space-y-4 text-base leading-8 text-white/74">
-                  {section.body.map((paragraph) => (
-                    <p key={paragraph}>{paragraph}</p>
-                  ))}
-                </div>
-              </section>
-            ))}
+            <div className="mt-12 space-y-10">
+              {sections.map((section) => (
+                <section key={section.title}>
+                  <h2 className="font-display text-2xl tracking-[0.08em] uppercase text-white">
+                    {section.title}
+                  </h2>
+                  <div className="mt-4 space-y-4 text-base leading-8 text-white/74">
+                    {section.body.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </section>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
+      <footer className="border-t border-white/8 bg-[#061019]/92">
+        <div className="mx-auto flex max-w-4xl flex-col gap-4 px-6 py-8 text-sm text-white/66 lg:px-10">
+          <div className="flex flex-wrap gap-5 font-semibold tracking-[0.12em] uppercase">
+            <Link href="/">Home</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/delete-account">Delete Account</Link>
+            <a href="mailto:game@getbattleshift.com">Support</a>
+          </div>
+          <p>© 2026 BattleShift. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
   );
 }

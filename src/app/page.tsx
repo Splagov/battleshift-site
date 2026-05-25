@@ -169,7 +169,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(86,214,255,0.18),transparent_15%),radial-gradient(circle_at_78%_14%,rgba(109,255,189,0.14),transparent_18%),radial-gradient(circle_at_50%_52%,rgba(20,66,105,0.22),transparent_28%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_10%,rgba(86,214,255,0.18),transparent_15%),radial-gradient(circle_at_78%_14%,rgba(109,255,189,0.14),transparent_18%),radial-gradient(circle_at_50%_52%,rgba(20,66,105,0.22),transparent_28%)]" />
 
       <section className="battle-grid relative isolate overflow-hidden border-b border-white/8">
         <div className="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 lg:px-10">
@@ -545,6 +545,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="border-t border-white/8 bg-[#061019]/92">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:px-10">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/assets/branding/battleshift_logo_mark.png"
+              alt="BattleShift logo"
+              width={44}
+              height={44}
+              className="h-11 w-11"
+            />
+            <div>
+              <p className="text-lg font-black tracking-[0.12em] text-white uppercase">BattleShift</p>
+              <p className="text-sm leading-6 text-white/58">
+                Mobile hero duel arena for iPhone and iPad.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-semibold tracking-[0.12em] text-white/72 uppercase">
+            <a href={appStoreUrl}>App Store</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/delete-account">Delete Account</a>
+            <a href="mailto:game@getbattleshift.com">Support</a>
+          </div>
+
+          <p className="text-sm text-white/48">© 2026 BattleShift. All rights reserved.</p>
+        </div>
+      </footer>
     </main>
   );
 }

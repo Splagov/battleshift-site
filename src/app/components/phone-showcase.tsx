@@ -52,8 +52,8 @@ export function PhoneShowcase() {
 
   return (
     <div className="relative mx-auto w-full max-w-[392px]">
-      <div className="absolute -left-10 top-16 h-40 w-40 rounded-full bg-cyan-400/18 blur-3xl" />
-      <div className="absolute -right-6 bottom-14 h-52 w-52 rounded-full bg-emerald-300/14 blur-3xl" />
+      <div className="pointer-events-none absolute -left-10 top-16 h-40 w-40 rounded-full bg-cyan-400/18 blur-3xl" />
+      <div className="pointer-events-none absolute -right-6 bottom-14 h-52 w-52 rounded-full bg-emerald-300/14 blur-3xl" />
       <div className="hero-aura relative mx-auto w-full max-w-[372px] overflow-hidden rounded-[2.6rem] border border-white/12 bg-[linear-gradient(180deg,rgba(7,18,29,0.98),rgba(5,12,19,1))] p-3.5 backdrop-blur-xl">
         <div className="absolute left-1/2 top-3 z-20 h-7 w-40 -translate-x-1/2 rounded-b-[1.3rem] bg-black/90" />
         <div className="absolute inset-x-5 top-8 z-10 flex items-center justify-between text-[11px] font-semibold tracking-[0.18em] text-white/58 uppercase">
