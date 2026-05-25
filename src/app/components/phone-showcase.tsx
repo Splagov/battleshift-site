@@ -54,13 +54,13 @@ export function PhoneShowcase() {
     <div className="relative">
       <div className="absolute -left-10 top-16 h-40 w-40 rounded-full bg-cyan-400/18 blur-3xl" />
       <div className="absolute -right-6 bottom-14 h-52 w-52 rounded-full bg-emerald-300/14 blur-3xl" />
-      <div className="hero-aura relative mx-auto w-full max-w-[430px] overflow-hidden rounded-[3rem] border border-white/12 bg-[linear-gradient(180deg,rgba(7,18,29,0.98),rgba(5,12,19,1))] p-4 backdrop-blur-xl">
+      <div className="hero-aura relative mx-auto w-full max-w-[372px] overflow-hidden rounded-[2.6rem] border border-white/12 bg-[linear-gradient(180deg,rgba(7,18,29,0.98),rgba(5,12,19,1))] p-3.5 backdrop-blur-xl">
         <div className="absolute left-1/2 top-3 z-20 h-7 w-40 -translate-x-1/2 rounded-b-[1.3rem] bg-black/90" />
         <div className="absolute inset-x-5 top-8 z-10 flex items-center justify-between text-[11px] font-semibold tracking-[0.18em] text-white/58 uppercase">
           <span>BattleShift</span>
           <span>Live build</span>
         </div>
-        <div className="relative mt-8 overflow-hidden rounded-[2.35rem] border border-white/8 bg-[#050d15]">
+        <div className="relative mt-8 overflow-hidden rounded-[2rem] border border-white/8 bg-[#050d15]">
           <div className="aurora-ring left-[16%] top-[14%] h-28 w-28 bg-cyan-300/26" />
           <div className="aurora-ring right-[14%] top-[24%] h-36 w-36 bg-emerald-300/18" />
           <div className="lightning-strand left-[14%] top-[11%] h-24 -rotate-12" />
@@ -85,15 +85,15 @@ export function PhoneShowcase() {
       </div>
 
       <div className="mt-5 space-y-4">
-        <div className="flex items-center justify-between gap-4 rounded-[1.6rem] border border-white/10 bg-[#0a1623]/88 px-5 py-4">
-          <div>
+        <div className="flex min-h-[112px] items-start justify-between gap-4 rounded-[1.6rem] border border-white/10 bg-[#0a1623]/88 px-5 py-4">
+          <div className="min-h-[68px]">
             <p className="text-[11px] font-bold tracking-[0.24em] text-(--accent-cool) uppercase">
               iPhone Showcase
             </p>
             <p className="mt-2 text-xl font-semibold text-white">{activeShot.title}</p>
-            <p className="mt-1 text-sm leading-6 text-(--muted)">{activeShot.subtitle}</p>
+            <p className="mt-1 max-w-[15rem] text-sm leading-6 text-(--muted)">{activeShot.subtitle}</p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex shrink-0 gap-2 pt-1">
             {visibleShots.map((shot, index) => (
               <button
                 key={shot.src}

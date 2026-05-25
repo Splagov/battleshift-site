@@ -208,22 +208,22 @@ export default function Home() {
             </nav>
           </header>
 
-          <div className="grid flex-1 items-center gap-14 py-14 lg:grid-cols-[1fr_0.96fr] lg:py-20">
+          <div className="grid flex-1 items-center gap-12 py-12 lg:grid-cols-[1.02fr_0.9fr] lg:py-16">
             <div className="relative z-10">
               <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-(--line) bg-white/6 px-4 py-2 text-xs font-semibold tracking-[0.22em] text-white/84 uppercase backdrop-blur">
                 <span className="h-2.5 w-2.5 rounded-full bg-(--accent)" />
                 Available now on the App Store
               </div>
-              <h1 className="max-w-5xl text-5xl font-black leading-[0.92] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-4xl text-4xl font-black leading-[0.94] tracking-[-0.04em] text-white sm:text-5xl lg:text-[4.15rem]">
                 Real heroes. One lane. Towers, creeps, chat, friends, and live pressure.
               </h1>
-              <p className="mt-8 max-w-2xl text-xl leading-8 text-(--muted) sm:text-2xl">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-(--muted) sm:text-xl">
                 BattleShift is a focused mobile hero duel game for iPhone and iPad. Fight in
                 direct PvP rooms, practice in bot matches, break towers, protect your fountain,
                 and keep the rivalry alive with messages, friends, and player profiles.
               </p>
 
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href={appStoreUrl}
                   className="inline-flex h-14 items-center justify-center rounded-full bg-[linear-gradient(135deg,#58d8ff,#79ffb3)] px-8 text-sm font-black tracking-[0.18em] text-slate-950 uppercase transition-transform duration-200 hover:-translate-y-0.5"
@@ -238,7 +238,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-2">
+              <div className="mt-8 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[1.4rem] border border-white/10 bg-[#0a1624]/82 px-5 py-5 backdrop-blur">
                   <p className="text-xs font-black tracking-[0.24em] text-(--accent-cool) uppercase">
                     What is live
